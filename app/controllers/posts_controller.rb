@@ -11,9 +11,9 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     if post.update_attributes(params[:post])
-      render json: user
+      render json: post
     else
-      render json: user, status: 422
+      render json: post, status: 422
     end
   end
 end
