@@ -1,3 +1,24 @@
-<p>{{view Ember.TextField valueBinding='title'}}</p>
-<p>{{view Ember.TextArea valueBinding='intro'}}</p>
-<p>{{view Ember.TextArea valueBinding='extended'}}</p>
+<form>
+  <div class="row collapse">
+    <div class="small-3 large-2 columns">
+      <span class="prefix"><strong>Title</strong></span>
+    </div>
+    <div class="small-9 large-10 columns">
+      {{view Ember.TextField valueBinding='title'}}
+    </div>
+
+    <div class="small-3 large-2 columns">
+      <span class="prefix"><strong>Intro</strong></span>
+    </div>
+    <div class="small-9 large-10 columns">
+      {{view Ember.TextArea valueBinding='intro'}}
+    </div>
+
+    <div class="small-3 large-2 columns">
+      <span class="prefix"><strong>Extended</strong></span>
+    </div>
+    <div class="small-9 large-10 columns">
+      {{view Ember.TextArea valueBinding='extended'}}
+    </div>
+  </div>
+</form>

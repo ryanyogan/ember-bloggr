@@ -1,18 +1,10 @@
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3">
-      <table class="table">
-        <thead>
-          <tr><th>Recent Posts</th></tr>
-        </thead>
+<div class="row">
+  <div class="large-3 columns">
         {{#each model}}
-          <tr><td>
-              {{#linkTo 'post' this}}{{title}}<small class="muted"> by {{author}}</small>{{/linkTo}}
-          </td></tr>
+              {{#linkTo 'post' this class="button small radius expand"}}{{title}}<small> by {{author}}</small>{{/linkTo}}
          {{/each}}
-     </table>
    </div>
-   <div class="span9">
+   <div class="large-9 columns">
      {{outlet}}
    </div>
  </div>

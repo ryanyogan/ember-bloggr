@@ -1,7 +1,11 @@
+App.Router.reopen
+  location: 'history'
+  rootUrl: '/'
+
 App.Router.map ->
   @resource 'posts', ->
     @resource 'post',
-      path: '/:user_id'
+      path: '/:post_id'
   @resource 'about'
 
 App.IndexRoute = Ember.Route.extend

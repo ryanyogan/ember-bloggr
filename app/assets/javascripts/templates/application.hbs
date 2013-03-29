@@ -1,11 +1,17 @@
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Bloggr</a>
-    <ul class="nav">
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">BlogGr</a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="left">
+      <li class="divider"></li>
       <li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
+      <li class="divider"></li>
       <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
     </ul>
-  </div>
-</div>
+  </section>
+</nav>
 
 {{outlet}}

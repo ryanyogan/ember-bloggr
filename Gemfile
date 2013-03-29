@@ -20,12 +20,12 @@ group :assets do
   gem 'coffee-rails'
   gem 'compass-rails'
   gem 'uglifier'
-  gem 'bootstrap-sass'
   gem 'modernizr-rails'
   gem 'ember-rails'
   gem 'handlebars_assets'
   gem 'momentjs-rails'
   gem 'showdown-rails'
+  gem 'zurb-foundation', '~> 4.0.0'
 end
 
 group :development do
