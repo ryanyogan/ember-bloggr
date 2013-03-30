@@ -1,14 +1,18 @@
 
-
-<h3>{{title}}
-<span class="subheader">by {{author}} ({{date publishedAt}})</span></h3>
-<hr />
-<p>{{markdown intro}}</p>
-
-
-<div class="below-the-fold">
-  {{markdown extended}}
+<div class="panel radius callout">
+  <h2>{{title}}</h2>
 </div>
+
+<h4>Posted by {{author}} {{date publishedAt}}</h4>
+
+<h4 class="subheader">
+  {{markdown intro}}
+</h3>
+
+
+<h5 class="subheader">
+  {{markdown extended}}
+</h5>
 
 {{#if locked}}
   {{partial 'messages/locked'}}
