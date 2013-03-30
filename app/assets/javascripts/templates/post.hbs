@@ -10,9 +10,13 @@
   {{markdown extended}}
 </div>
 
-{{#if isEditing}}
-{{partial 'post/edit'}}
-  <button {{action 'doneEditing'}} class="button success expand"> Done</button>
-{{else}}
-  <button {{action 'edit'}} class="button secondary expand"> Edit</button>
+{{#if locked}}
+  {{partial 'messages/locked'}}
+{{ else }}
+  {{#if isEditing}}
+  {{partial 'post/edit'}}
+    <button {{action 'doneEditing'}} class="button success expand"> Done</button>
+  {{else}}
+    <button {{action 'edit'}} class="button secondary expand"> Edit</button>
+  {{/if}}
 {{/if}}

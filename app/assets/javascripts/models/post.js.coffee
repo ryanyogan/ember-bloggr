@@ -4,4 +4,5 @@ App.Post = DS.Model.extend
   intro: DS.attr 'string'
   extended: DS.attr 'string'
   publishedAt: DS.attr 'date'
+  locked: DS.attr 'boolean'
 
