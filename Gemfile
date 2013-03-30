@@ -15,7 +15,7 @@ end
 
 # Using Gem's to make life easier
 group :assets do
-  gem 'jquery-rails'
+  gem 'jquery-rails', '2.2.1'
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'compass-rails'
@@ -25,7 +25,7 @@ group :assets do
   gem 'handlebars_assets'
   gem 'momentjs-rails'
   gem 'showdown-rails'
-  gem 'zurb-foundation', '~> 4.0.0'
+  gem 'zurb-foundation', '4.0.9'
 end
 
 group :development do
