@@ -10,7 +10,7 @@ App.Router.map ->
 
 App.IndexRoute = Ember.Route.extend
   redirect: ->
-    @.transitionTo 'posts'
+    @.transitionTo 'about'
 
 App.PostsRoute = Ember.Route.extend
   model: ->
