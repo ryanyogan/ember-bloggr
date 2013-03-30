@@ -1,11 +1,11 @@
 #= require modernizr
 #= require jquery
-#= require foundation
 #= require handlebars
 #= require ember
 #= require ember-data
 #= require moment
 #= require showdown
+#= require foundation
 #= require_self
 #= require store
 #= require routes
@@ -16,4 +16,4 @@
 
 
 window.App = Ember.Application.create()
-($ document).foundation()
+#($ document).foundation()
