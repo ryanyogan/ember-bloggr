@@ -1,16 +1,20 @@
 <nav class="top-bar">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#">Ember Bloggr</a></h1>
+      <h1><a href="/">Ember Bloggr</a></h1>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
   <section class="top-bar-section">
-    <ul class="left">
+    <ul class="right">
       <li class="divider"></li>
       <li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
       <li class="divider"></li>
       <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+      <li class="divider show-for-small"></li>
+      <li class="has-form">
+        <a href="https://github.com/moosehead/ember-bloggr" target=_BLANK class="button">Github</a>
+      </li>
     </ul>
   </section>
 </nav>
