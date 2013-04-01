@@ -16,4 +16,3 @@
 
 
 window.App = Ember.Application.create()
-($ document).foundation()
